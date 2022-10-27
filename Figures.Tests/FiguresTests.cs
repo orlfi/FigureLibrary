@@ -56,7 +56,7 @@ public class FiguresTests
     [Fact]
     public void Tringle_CreationWithWrongSides_ShouldThrowException()
     {
-        var expectedMessage = "Specified argument was out of the range of valid values. (Parameter 'Стороны треугольника должны быть больше 0')";
+        var expectedMessage = "Specified argument was out of the range of valid values.";
 
         var exception = Assert.Throws<ArgumentOutOfRangeException>(() => new Triangle(-5, 10, 10));
         

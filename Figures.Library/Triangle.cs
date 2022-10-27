@@ -19,7 +19,7 @@ public class Triangle : Figure
     public Triangle(double a, double b, double c)
     {
         if (a <= 0 || b <= 0 || c <= 0)
-            throw new ArgumentOutOfRangeException("Стороны треугольника должны быть больше 0");
+            throw new ArgumentOutOfRangeException();
 
         (A, B, C) = (a, b, c);
     }
